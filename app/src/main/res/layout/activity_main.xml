@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    >
 
     <TextView
         android:id="@+id/textSignIn"
@@ -20,10 +23,9 @@
 
     <EditText
         android:id="@+id/edtSignInEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:width="250dp"
         android:autofillHints="Your Email"
         android:ems="10"
         android:hint="Email"
@@ -35,10 +37,9 @@
 
     <EditText
         android:id="@+id/edtSignInPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:width="250dp"
+        android:layout_marginTop="16dp"
         android:autofillHints="Your Password"
         android:ems="10"
         android:hint="Password"
@@ -50,14 +51,13 @@
 
     <Button
         android:id="@+id/btnSignIn"
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/colorPrimary"
         android:text="Sign In"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtSignInPassword" />
 
