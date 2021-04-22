@@ -8,16 +8,12 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val createAccountTextView:TextView = findViewById(R.id.textDontHaveAcc)
         createAccountTextView.setOnClickListener(this)
-
-
 
     }
 

@@ -49,14 +49,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtSignInEmail" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/colorPrimary"
         android:text="Sign In"
-        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        app:rippleColor="#33AAAAAA"
+        android:textColor="@android:color/white"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeWidth="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtSignInPassword" />
